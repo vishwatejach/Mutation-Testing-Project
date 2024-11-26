@@ -25,7 +25,7 @@ Types of Mutators Used:
 
 Overall Test Report:
 
-<img src="Overall Test Report.png" alt="Overall Test Report" width="600" height="auto">
+<img src="OverallTestReport.png" alt="Overall Test Report" width="600" height="auto">
 
 Unit Testing:
 
