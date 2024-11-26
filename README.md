@@ -8,20 +8,24 @@ The entire code base of the project is available [here](https://github.com/vishw
 
 <H5>Testing Tools:</H5>
 JUnit 5 (implied by Spring Boot 3.2.5 starter) used for writing Unit and Integration Tests.  
+
 Pitest Maven Plugin (version 1.17.1) for mutation testing
 
 
 The Schema of the project goes as follows:
-![img.png](img.png)
+![img.png](Schema.png)
+
+Types of Mutators Used:
+![Mutators](Mutators.png)
 
 <H3>The Results of the Mutation Testing are as follows:</H3>
 
 Overall Test Report:
-![Overall Test Report](img_1.png)
+![Overall Test Report](Overall Test Report.png)
 
 Unit Testing:
-![Unit Testing](img_2.png)
+![Unit Testing](UnitTestingReport.png)
 
 Integration Testing:
-![Integration Testing](img_3.png)
+![Integration Testing](IntegrationTestingReport.png)
 

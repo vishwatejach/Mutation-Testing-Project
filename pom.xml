@@ -104,6 +104,7 @@
 							<param>com.example.spebackend.controller.OrderControllerIntegrationTest</param>
 						</targetTests>
 						<mutators>
+							<!-- Conditional Mutators-->
 							<mutator>CONDITIONALS_BOUNDARY</mutator>
 							<mutator>NEGATE_CONDITIONALS</mutator>
 							<mutator>REMOVE_CONDITIONALS_EQUAL_ELSE</mutator>
@@ -131,17 +132,7 @@
 
 							<!-- Constants -->
 							<mutator>INLINE_CONSTS</mutator>
-
-							<!-- Experimental Mutators -->
-							<mutator>EXPERIMENTAL_ARGUMENT_PROPAGATION</mutator>
-							<mutator>EXPERIMENTAL_BIG_DECIMAL</mutator>
-							<mutator>EXPERIMENTAL_BIG_INTEGER</mutator>
-							<mutator>EXPERIMENTAL_MEMBER_VARIABLE</mutator>
-							<mutator>EXPERIMENTAL_NAKED_RECEIVER</mutator>
-							<mutator>EXPERIMENTAL_SWITCH</mutator>
 						</mutators>
-
-
 						<timeoutConstant>10000</timeoutConstant>
 						<threads>4</threads>
 						<outputFormats>
