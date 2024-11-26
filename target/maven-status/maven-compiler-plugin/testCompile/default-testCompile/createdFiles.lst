@@ -1,8 +1,0 @@
-com\example\spebackend\service\BookingServiceImplTest.class
-com\example\spebackend\controller\CustomerControllerTest.class
-com\example\spebackend\service\RestraurantServiceImplTest.class
-com\example\spebackend\service\OrderProcessorTest.class
-com\example\spebackend\SpebackendApplicationTests.class
-com\example\spebackend\service\CustomerServiceImplTest.class
-com\example\spebackend\controller\RestraurantControllerTest.class
-com\example\spebackend\controller\LoginControllerTest.class
