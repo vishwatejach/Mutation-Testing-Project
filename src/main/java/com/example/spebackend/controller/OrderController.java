@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/orders")
 public class OrderController {
 
-    private final OrderProcessor orderProcessor;
+    private static OrderProcessor orderProcessor;
 
     @Autowired
     public OrderController(OrderProcessor orderProcessor) {
@@ -44,7 +44,7 @@ public class OrderController {
 
 
     @PostMapping("/validate")
-    public ResponseEntity<?> validateOrder(@RequestBody Order order) {
+    public static ResponseEntity<?> validateOrder(@RequestBody Order order) {
         try {
             String validationResult = orderProcessor.validateOrder(order);
             if ("VALID".equals(validationResult)) {
@@ -70,7 +70,7 @@ public class OrderController {
     }
 
     // Response classes for better API structure
-    private static class OrderResponse {
+    static class OrderResponse {
         private final double total;
         private final String message;
 
@@ -88,7 +88,7 @@ public class OrderController {
         }
     }
 
-    private static class ValidationResponse {
+    static class ValidationResponse {
         private final boolean valid;
         private final String message;
 
@@ -106,7 +106,7 @@ public class OrderController {
         }
     }
 
-    private static class ShippingCostResponse {
+    static class ShippingCostResponse {
         private final double cost;
 
         public ShippingCostResponse(double cost) {
@@ -118,7 +118,7 @@ public class OrderController {
         }
     }
 
-    private static class ErrorResponse {
+    static class ErrorResponse {
         private final String error;
 
         public ErrorResponse(String error) {
