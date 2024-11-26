@@ -13,19 +13,24 @@ Pitest Maven Plugin (version 1.17.1) for mutation testing
 
 
 The Schema of the project goes as follows:
-![img.png](Schema.png)
+
+<img src="Schema.png" alt="Schema" width="600" height="auto">
+
 
 Types of Mutators Used:
-![Mutators](Mutators.png)
+
+<img src="Mutators.png" alt="Mutators" width="300" height="auto">
 
 <H3>The Results of the Mutation Testing are as follows:</H3>
 
 Overall Test Report:
-![Overall Test Report](Overall Test Report.png)
+
+<img src="Overall Test Report.png" alt="Overall Test Report" width="600" height="auto">
 
 Unit Testing:
-![Unit Testing](UnitTestingReport.png)
+
+<img src="UnitTestingReport.png" alt="Unit Testing" width="600" height="auto">
 
 Integration Testing:
-![Integration Testing](IntegrationTestingReport.png)
 
+<img src="IntegrationTestingReport.png" alt="Integration Testing" width="600" height="auto">
